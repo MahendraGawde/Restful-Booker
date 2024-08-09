@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="E:/Intellij_Projects/API_Automation/RestfulBooker/src/test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.062">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testCreateBooking_Invalid"
+                time="1.571"
+                classname="com.api.crud.TC_CreateBooking">
+            </testcase>
+            <testcase
+                name="testCreateBooking_Valid"
+                time="1.491"
+                classname="com.api.crud.TC_CreateBooking">
+            </testcase>
+</testsuite>

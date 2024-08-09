@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="3" preserve-order="true" name="E:/Intellij_Projects/API_Automation/RestfulBooker/src/test">
+        <classes>
+            <class name="com.api.crud.TC_IntegrationTest">
+                <methods>
+                    <include name="testCreateBooking"/>
+                </methods>
+            </class>
+            <class name="com.api.ddt.AuthCredDDT">
+                <methods>
+                    <include name="testLoginData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
