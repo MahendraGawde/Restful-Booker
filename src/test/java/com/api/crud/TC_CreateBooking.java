@@ -1,7 +1,6 @@
 package com.api.crud;
 
 import com.api.base.BaseTest;
-
 import com.api.endpoints.APIConstants;
 import com.api.payloads.responsepayload.BookingResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -9,9 +8,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import io.restassured.path.json.JsonPath;
 import org.testng.annotations.Test;
-import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
