@@ -19,6 +19,7 @@ public class TC_CreateBooking extends BaseTest {
     @Owner("Mahendra")
     @Severity(SeverityLevel.CRITICAL)
     @Description("TC#1 - Create booking positive test case")
+
     public void testCreateBooking_Valid() throws JsonProcessingException {
         //Call request block
         //Call payload block

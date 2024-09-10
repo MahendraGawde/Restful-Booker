@@ -37,12 +37,12 @@ public class BaseTest{
         //Method2
         /*reqBuilder = new RequestSpecBuilder();
         reqBuilder.setBaseUri(BASE_URL).addHeader("Content-Type", "application/json");
-        requestSpecification = reqBuilder.build();
+        requestSpecification = reqBuilder.build();*/
 
         resBuilder = new ResponseSpecBuilder();
         resBuilder.expectStatusCode(200)
                 .expectContentType(ContentType.JSON);
-        responseSpecification = resBuilder.build();*/
+        responseSpecification = resBuilder.build();
     }
 
     public String testGetToken() throws JsonProcessingException {
