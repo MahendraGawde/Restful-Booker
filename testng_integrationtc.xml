@@ -4,9 +4,6 @@
     <test verbose="3" preserve-order="true" name="E:/Intellij_Projects/API_Automation/RestfulBooker/src/test">
         <classes>
             <class name="com.api.crud.TC_IntegrationTest">
-                <methods>
-                    <include name="testCreateBooking"/>
-                </methods>
             </class>
             <class name="com.api.ddt.AuthCredDDT">
                 <methods>
