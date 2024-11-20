@@ -9,8 +9,10 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.ValidatableResponse;
 import org.hamcrest.Matchers;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.*;
+import static org.hamcrest.Matchers.equalTo;
 
 public class TC_IntegrationTest extends BaseTest {
     // Create auth token
@@ -34,6 +36,7 @@ public class TC_IntegrationTest extends BaseTest {
 
         jsonPath = JsonPath.from(response.asString());
         validatableResponse.statusCode(200);
+        validatableResponse.body("booking.firstname",equalTo("Vikas"));
 
         //Extract booking id from Jsonpath
         bookingIdJson = jsonPath.getString("bookingid");
@@ -64,6 +67,7 @@ public class TC_IntegrationTest extends BaseTest {
         validatableResponse = response.then().log().all();
         validatableResponse.body("firstname", Matchers.is("Kriti"));
 
+        //Validating Response fields
         Booking bookingUpdateResponse = payloadManager.jsonToPojoPUT(response.asString());
         assertThat(bookingUpdateResponse.getFirstname()).isEqualTo("Kriti").isNotNull();
         assertThat(bookingUpdateResponse.getLastname()).isEqualTo("Sanon").isNotEmpty();

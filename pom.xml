@@ -27,6 +27,13 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+    <dependency>
+      <groupId>com.jayway.jsonpath</groupId>
+      <artifactId>json-path</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+
 
     <dependency>
       <groupId>org.testng</groupId>
@@ -35,12 +42,6 @@
       <scope>compile</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.testng/reportng -->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>reportng</artifactId>
-      <version>1.2.2</version>
-    </dependency>
 
     <dependency>
       <groupId>org.assertj</groupId>
@@ -132,6 +133,7 @@
       <artifactId>allure-testng</artifactId>
       <version>2.25.0</version>
     </dependency>
+
 
   </dependencies>
 
